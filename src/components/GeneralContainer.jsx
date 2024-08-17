@@ -1,10 +1,10 @@
-import MainBody from "./MainBody"
-import TopHeader from "./header/TopHeader"
-import AsideRight from "./aside/AsideRight"
+import MainBody from './MainBody'
+import TopHeader from './header/TopHeader'
+import AsideRight from './aside/AsideRight'
 import { useState } from 'react'
-import  {INITIAL_TODOS}  from "../const"
+import { INITIAL_TODOS } from '../const'
 
-export default function GeneralContainer() {
+export default function GeneralContainer () {
   const [todos, setTodos] = useState(INITIAL_TODOS)
   const removeTodo = (index) => {
     const newTodos = [...todos]
@@ -17,11 +17,11 @@ export default function GeneralContainer() {
     setTodos(newTodos)
   }
   return (
-    <div className="general-container">
-      <TopHeader todos={todos}/>
+    <div className='general-container'>
+      <TopHeader todos={todos} />
       <div className='main-and-aside'>
-        <MainBody todos={todos} removeTodo={removeTodo}/>
-        <AsideRight addTodo={addTodo}/>
+        <MainBody todos={todos} removeTodo={removeTodo} />
+        <AsideRight addTodo={addTodo} />
       </div>
     </div>
   )

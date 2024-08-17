@@ -1,8 +1,8 @@
-export default function Todo({todoText, index, removeTodo}) {
+export default function Todo ({ todoText, index, removeTodo }) {
   return (
     <div className='todo'>
       <li>{todoText}</li>
-      <button onClick={() => removeTodo(index)}>X</button>
+      <button onClick={() => removeTodo(index)}>×</button>
     </div>
   )
 }

@@ -1,11 +1,11 @@
-import Todo from "./Todo";
+import Todo from './Todo'
 
-export default function MainBody({ todos, removeTodo }) {
+export default function MainBody ({ todos, removeTodo }) {
   return (
-    <div className="main-body">
+    <div className='main-body'>
       {todos.map((todo, index) => (
-        <Todo key={index} todoText={todo} index={index} removeTodo={removeTodo}/>
+        <Todo key={index} todoText={todo} index={index} removeTodo={removeTodo} />
       ))}
     </div>
-  );
+  )
 }
