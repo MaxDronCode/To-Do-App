@@ -17,6 +17,7 @@
   min-height: 90dvh;
   overflow-y: auto;
   background-color: #f2ede4;
+  scrollbar-width:none;
 }
 
 .top-header {

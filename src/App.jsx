@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import GeneralContainer from './components/GeneralContainer'
 import './App.css'
 

@@ -1,6 +1,7 @@
 export default function AsideRight ({ addTodo }) {
   const handleSubmit = (e) => {
     e.preventDefault()
+    if (!e.target[0].value) return
     addTodo(e.target[0].value)
     e.target[0].value = ''
   }
